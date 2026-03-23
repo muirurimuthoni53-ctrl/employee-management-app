@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+         <a href="index.html">Home</a>
+         <a href="new-contact.html">New Contact</a>
+         <a href="view-contacts.html">View All Contacts</a>
+    </nav>
+    <div class="container">
+    <h1>Add New Contact</h1>
+    <p>Use the form below to add a new contact to the Employee Management System.</p>
+    <form>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter Full Name" required><br> <br>
+        </div>
+         
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female" required> Female</label>
+            </div><br> <br>
+        </div>
+
+        <div class="form-group">
+            <label for="id">Employee ID</label>
+            <input type="text" id="id" placeholder="Enter Employee ID" required><br> <br>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter Email Address" required><br> <br>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter Phone Number" required><br> <br>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department</label>
+            <select name="department" required>
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Development">Development</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Finance">Finance</option> 
+            </select><br> <br>   
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position</label>
+            <select name="position" required>
+                <option value="">Select Position</option>
+                <option value="Manager">Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Intern">Intern</option>
+            </select><br> <br>
+        </div>
+
+        <button type="submit" class="submit-btn">Add Contact</button>
+        
+
+    </form>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="new-contact.html">New Contact</a>
+        <a href="view-contacts.html">View Contacts</a>
+    </nav>
+    <h1>Employee Contacts</h1>
+    <p>Here you can see all the contacts in the Employee Management System.</p>
+      <div class="table-container">
+        <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>0712345678</td>
+            <td>Sales</td>
+            <td>
+                <button class="btn btn-details" onclick="viewDetails('John Doe', 'john@gmail.com', '0712345678', 'Sales')">Details</button>
+                <button class="btn btn-edit" onclick="editContact()">Edit</button>
+                <button class="btn btn-delete" onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+         <tr>
+            <td>Jane Doe</td>
+            <td>jane@gmail.com</td>
+            <td>0798765432</td>
+            <td>Development</td>
+            <td>
+                <button class="btn btn-details" onclick="viewDetails('Jane Doe', 'jane@gmail.com', '0798765432', 'Development')">Details</button>
+                <button class="btn btn-edit" onclick="editContact()">Edit</button>
+                <button class="btn btn-delete" onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+         <tr>
+            <td>Mark Smith</td>
+            <td>mark@gmail.com</td>
+            <td>0755555555</td>
+            <td>Marketing</td>
+            <td>
+                <button class="btn btn-details" onclick="viewDetails('Mark Smith', 'mark@gmail.com', '0755555555', 'Marketing')">Details</button>
+                <button class="btn btn-edit" onclick="editContact()">Edit</button>
+                <button class="btn btn-delete" onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+         <tr>
+            <td>Mary Ann</td>
+            <td>mary@gmail.com</td>
+            <td>0788888888</td>
+            <td>Design</td>
+            <td>
+                <button class="btn btn-details" onclick="viewDetails('Mary Ann', 'mary@gmail.com', '0788888888', 'Design')">Details</button>
+                <button class="btn btn-edit" onclick="editContact()">Edit</button>
+                <button class="btn btn-delete" onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+         <tr>
+            <td>Harry Potter</td>
+            <td>harry@gmail.com</td>
+            <td>0700000000</td>
+            <td>HR</td>
+            <td>
+                <button class="btn btn-details" onclick="viewDetails('Harry Potter', 'harry@gmail.com', '0700000000', 'HR')">Details</button>
+                <button class="btn btn-edit" onclick="editContact()">Edit</button>
+                <button class="btn btn-delete" onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
